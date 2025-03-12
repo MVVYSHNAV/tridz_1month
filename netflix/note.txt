@@ -1,0 +1,22 @@
+what is javascript?
+    - full stack developer
+    - front-end developer
+    - back-end developer
+
+
+ what can do with javascript
+        full web/mobile app : 
+        real time networking app : 
+        commandline tools :
+        games :
+
+where does javascript code run
+        Browser - javascript-engine
+        Node - c++ program with javascript-engine
+
+javascript vs ECMASctipt
+    just specification - ECMASctipt
+    programming langauage - javascript
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-4">
+
+    <div class="bg-white shadow-lg p-6 rounded-lg w-full max-w-lg">
+        <h2 class="text-2xl font-bold flex items-center">
+            Your Tasks 
+            <span id="notificationCount" class="ml-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full hidden">
+                0
+            </span>
+        </h2>
+
+        <!-- Task Input Fields -->
+        <div class="mt-4">
+            <input id="taskInput" type="text" placeholder="Enter task..." class="w-full p-2 border rounded mb-2">
+            <input id="taskDueDate" type="date" class="w-full p-2 border rounded mb-2">
+
+            <select id="taskCategory" class="w-full p-2 border rounded mb-2">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+
+            <select id="taskPriority" class="w-full p-2 border rounded mb-2">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <select id="taskRecurring" class="w-full p-2 border rounded mb-2">
+                <option value="none">No Repeat</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <button onclick="addTask()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Add Task</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="mt-4"></ul>
+    </div>
+
+    <script src="sample.js"></script>
+</body>
+</html>

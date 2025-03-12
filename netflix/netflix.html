@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <title>Netfli India - Watch TV shows Online, Watch Movies Online</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black">
+
+    <!-- home section -->
+     <section class="w-[100%] h-[700px] bg-[url('images/hero-img.jpeg')] bg-center bg-cover font-inherit overflow-hidden">
+        <div class="w-[100%] h-[900px] bg-[rgb(0,0,0,0.5)]">
+            <header class="max-w-[1170px] mx-auto ">
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] py-[15px] items-center">
+        
+                        <img src="/images//netflix-3.svg" alt="logo " class="w-[148px] "/>
+                    
+                    <div class="flex justify-end gap-[10px]">
+                        <div class="relative">
+                            <img src="/images/translate (1).png" alt="langauage" class="absolute top-[5px] left-[5px]" />
+                            <select name="" id="" class="bg-black text-white border-[1px] border-white p-[5px_25px] md:p-[5px_30px] md:max-w-[150px] max-w-[50px] rounded-[5px]">
+                                <option>English</option>
+                                <option>Hindi</option>
+                            </select>
+                        </div>
+                        <button class="bg-red-500   px-[10px] rounded-[5px] text-white">sign in</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="max-w-[1440px] mx-auto md:py-[100px] py-[90px] p-12 text-center text-white overflow-hidden">
+                <h1 class="md:text-[60px] text-[30px] font-bold leading-18"> Unlimited movies,<br/> TV shows and more</h1>
+                <h4 class="text-[20px] py-[10px]"> Starts at ₹149. Cancel at any time. </h4>
+                <p class="text-[20px] py-[10px]"> Ready to watch? Enter your email to create or restart your membership. </p>
+
+                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+                    <form action="" class="grid sm:grid-cols-[70%_auto] grid-cols-1 gap-[10px]">
+                        <input type="email" placeholder="Email Address"
+                        class="h-[50px] pl-[25px] border-[1px] border-gray-400 bg-[transparent] rounded " />
+                        <button class="bg-red-500 px-[10px] rounded-[5px] text-xl font-bold text-white py-[12px] hover:bg-red-800 duration-300">Get Started >
+                        </button>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- end section -->
+
+          <div class="w-full h-12 bg-gradient-to-b from-red-500 to-black [clip-path:ellipse(60%_100%_at_50%_100%)]">
+              <div class="h-12 bg-radial-[at_50%_100%]  from-sky-200 via-blue-400 to-indigo-900 to-90% blur-3xl max-w-4/6 mx-auto"></div>
+          </div>    
+
+
+    <!--  Cursoal section -->
+    <section class="w-[100%] mt-10  px-10 sm:px-10 md:px-10 lg:px-10 xl:px-0 overflow-x-scroll whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div class="max-w-[1170px] mx-auto ">
+            <div class="text-white ">
+                <h2 class="text-[22px] sm:text-[28px] font-bold">Trending Now</h2>
+            </div>
+
+            <div class="flex">
+                <div class="flex text-white items-center">
+                    <div class="w-full text-right">
+                        <button class="bg-gray-900 h-40 rounded-xl"
+                        onclick="prev()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                              </svg>                              
+                        </button>
+                    </div>
+                </div>
+                <div id="slidercontainer" class="w-[100%] sm:h-96 h-40 overflow-hidden">
+                    <ul id="slider" class="flex w-full transition-margin duration-700">
+                        <li class="relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] from-sky-200 bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">1</h2>
+                            <div>
+                                <img src="/images/nadaaniyan.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">2</h2>
+                            <div>
+                                <img src="/images/pushpa2.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">3</h2>
+                            <div>
+                                <img src="/images/squidgame.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">4</h2>
+                            <div>
+                                <img src="/images/dhaka.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">5</h2>
+                            <div>
+                                <img src="/images/bhool.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">6</h2>
+                            <div>
+                                <img src="/images/dhoomdhama.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">7</h2>
+                            <div>
+                                <img src="/images/luckybasker.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">8</h2>
+                            <div>
+                                <img src="/images/meduza.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">9</h2>
+                            <div>
+                                <img src="/images/abba.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                        <li class="sm:max-w-[250px] max-w-[150px] relative p-5">
+                            <h2 class="absolute text-black text-4xl sm:text-[100px] left-[-5px] font-bold bottom-6 [text-shadow:_0px_0px_3px_white] [-webkit-text-stroke:_3px_white]">10</h2>
+                            <div>
+                                <img src="/images/kadhalili.jpg" alt="movie1" class="rounded-xl sm:h-80 h-40 object-cover"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" flex text-white items-center">
+                    <div class="w-full">
+                        <button class="bg-gray-900 h-40 rounded-xl"
+                        onclick="next()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                              </svg>                              
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- attraction Section -->
+    <section class="max-w-[1170px] mx-auto px-8 sm:px-10 md:px-10 lg:px-10 xl:px-0 mt-10">
+        <div class="text-white"> 
+            <h2 class="text-[18px] sm:text-[28px] font-bold"> More reasons to join </h2>
+        </div>
+        <div class="mt-10">
+            <ul class="flex flex-wrap gap-5 justify-center sm:justify-start text-white">
+                <li class="bg-gradient-to-br from-[#192247] to-[#210e17] w-full sm:w-[48%] md:w-[23%] h-60 rounded-xl p-5">
+                    <div>
+                        <h2 class="  text-[18px] sm:text-xl font-bold  ">Enjoy on your TV</h2>
+                        <p class=" text-gray-400 mt-5 "> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+                        <img src="/images/tv.svg"  class="float-right "/>
+                    </div>
+                </li>
+                <li class="bg-gradient-to-br from-[#192247] to-[#210e17] sm:w-[48%] md:w-[23%] h-60 rounded-xl  p-5">
+                    <div>
+                            <h2  class=" text-[18px] sm:text-xl font-bold "> Download your shows to watch offline </h2>
+                            <p  class=" text-gray-400 mt-5 "> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+                            <img src="/images/arrowdwn.svg" class="float-right mt-[-20px]" />
+                    </div>
+                </li>
+                <li class="bg-gradient-to-br from-[#192247] to-[#210e17] w-full sm:w-[48%] md:w-[23%] h-60 rounded-xl  p-5">
+                    <div>
+                            <h2  class=" text-[18px] sm:text-xl font-bold ">Watch everywhere</h2>
+                            <p  class=" text-gray-400 mt-5 "> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+                            <img src="/images/partypop.svg" class="float-right" />
+                    </div>
+                </li>
+                <li class="bg-gradient-to-br from-[#192247] to-[#210e17] w-full sm:w-[48%] md:w-[23%] h-60 rounded-xl  p-5">
+                    <div>
+                            <h2  class="  text-[18px] sm:text-xl font-bold ">Create profiles for kids</h2>
+                            <p  class=" text-gray-400 mt-5 "> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+                            <img src="/images/msg.svg" class="float-right" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+     <!-- End Section -->
+      
+     <!-- Faq Section -->
+    <section class="w-[100%] mt-10">
+        <div class="max-w-[1170px] mx-auto px-[15px] text-white">
+            <h2 class="text-[18px] sm:text-[28px] font-bold">Frequently Asked Questions</h2>
+            <div class="py-[30px]">
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> What is Netflix? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px] origin-top p-4 hidden"> <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. </p>
+                    <br/><p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                </div>
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> How much does Netflix cost? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px]  p-4 hidden origin-top"> <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                    </div>
+                </div>
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> Where can I watch? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px] p-4 hidden origin-top"> <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                    </div>
+                </div>
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> How do I cancel? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px]  p-4 hidden origin-top"> <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+                </div>
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> What can I watch on Netflix? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px]  p-4 hidden origin-top"> <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                </div>
+                <div class="bg-[rgb(45_45_45)] mb-[15px]">
+                    <div class="p-[20px] text-[15px] sm:text-[20px] relative border-b-[2px] border-black hover:bg-[rgb(78_78_78)] duration-300 cursor-pointer faquestion"><h2> Is Netflix good for kids? <span class="absolute right-[20px] top-[15px]">+</span></h2></div>
+                    <div class="text-[10px] sm:text-[18px]  p-4 hidden origin-top"> <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p><br/>
+                        <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- end section -->
+      <div class="max-w-[1440px] mx-auto text-center text-white overflow-hidden">
+      <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px] text-white">
+        <p class="text-[15px] py-[10px]"> Ready to watch? Enter your email to create or restart your membership. </p>
+        <form action="" class="grid sm:grid-cols-[70%_auto] grid-cols-1 gap-[10px] overflow-hidden">
+            <input id="btn" type="email" placeholder="Email Address"
+            class="h-[50px] pl-[20px] border-[1px] border-gray-400 bg-[transparent] rounded " />
+            <button  onclick="alert()" class="bg-red-500 px-[10px] rounded-[5px] text-xl font-bold text-white py-[12px] hover:bg-red-800 duration-300">Get Started >
+            </button>
+            <h1 id="btndis" class="text-white duration-300"></h1>
+        </form>                    
+    </div>
+    </div>
+
+    <!-- Footer section  -->
+     <footer class="w-[100%] bg-black sm:py-[80px] py-[50px] ">
+        <div class="max-w-[1170px] mx-auto px-[15px] text-white cursor-pointer">
+            <h3>Questions? Call 000-800-919-1743</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-8 mt-5 text-gray-400 text-[14px]">
+                <a class="underline">fAQ</a>
+                <a class="underline">Help center </a>
+                <a class="underline">Account</a>
+                <a class="underline">Media Center</a>
+                <a class="underline">Investor Relations</a>
+                <a class="underline">Job</a>
+                <a class="underline">Ways to Watch</a>
+                <a class="underline">Terms of Use</a>
+                <a class="underline">Privacy</a>
+                <a class="underline">Cookies Preference</a>
+                <a class="underline">Coporate Information</a>
+                <a class="underline">Contact us</a>
+                <a class="underline">SPeed Test</a>
+                <a class="underline">Legal Notices</a>
+                <a class="underline">Only on Netflix</a>
+            </div>
+            <div class="relative">
+                <img src="/images/translate (1).png" alt="langauage" class="absolute top-[5px] left-[5px]" />
+                <select name="" id="" class="bg-black text-white border-[1px] border-white p-[5px_25px] md:p-[5px_30px] md:max-w-[150px] max-w-[50px] rounded-[5px]">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+            <p class="mt-8 text-gray-400">Netflix India</p>
+        </div>
+     </footer>
+     <!-- end section  -->
+
+    <script src="./main.js"></script> 
+</body>
+</html>

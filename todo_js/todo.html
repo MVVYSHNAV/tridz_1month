@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO Lists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white shadow-lg p-6 flex justify-center min-h-screen"> 
+    <div class="bg-amber-50 p-6 rounded-lg w-full max-w-xl shadow-lg">
+        <h2 class="text-3xl text-amber-500 font-bold">
+            Your Task
+        </h2>
+
+        <div class="mt-4">
+            <label for="taskInput" class="text-sm font-semibold">Task:</label>
+            <input id="taskInput" type="text" placeholder="Enter task..." class="w-full p-2 border rounded mb-2" autocomplete="off"/>
+
+            <label for="taskDueDate" class="text-sm font-semibold">Due Date:</label>
+            <input id="taskDueDate" type="date" class="w-full p-2 border rounded mb-2"/>
+
+            <label for="taskCategory" class="text-sm font-semibold">Category:</label>
+            <select id="taskCategory" class="w-full p-2 border rounded mb-2">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+
+            <label for="taskPriority" class="text-sm font-semibold">Priority:</label>
+            <select id="taskPriority" class="w-full p-2 border rounded mb-2">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <label for="taskRecurring" class="text-sm font-semibold">Recurrence:</label>
+            <select id="taskRecurring" class="w-full p-2 border rounded mb-2">
+                <option value="none">No Repeat</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <button onclick="addTask()" class="bg-green-400 text-white px-4 py-2 mt-4 rounded hover:bg-green-500 w-full">Add Task</button>
+        </div>
+
+        <ul id="taskList" class="mt-4 space-y-2 overflow-y-scroll">
+            <button id="seeMoreBtn" class="bg-blue-500 text-white px-4 py-2 rounded mt-2 hidden" onclick="showMoreTasks()">
+                See More
+            </button>
+        </ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
