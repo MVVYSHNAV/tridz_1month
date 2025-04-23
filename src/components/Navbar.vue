@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import logo from '@/assets/logo.png';
-
+import  { RouterLink} from 'vue-router';
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -13,16 +13,16 @@ const toggleMenu = () => {
   <nav class="w-full bg-amber-100 px-4 md:px-10 py-4">
     <!-- Desktop Navigation -->
     <div class="hidden md:flex justify-between items-center">
-      <a href="/">
+      <RouterLink to="/">
         <div>
           <img class="w-16 h-16 md:w-20 md:h-20" :src="logo" alt="Logo" />
         </div>
-      </a>
+      </RouterLink> 
       <ul class="flex gap-4 md:gap-8">
-        <a href="/ride/engine"><li class="text-black hover:underline cursor-pointer">Engine</li></a>
-        <a href="/ride/parts"><li class="text-black hover:underline cursor-pointer">Parts</li></a>
-        <a href="/ride/components"><li class="text-black hover:underline cursor-pointer">Components</li></a>
-        <a href="/ride/spares"><li class="text-black hover:underline cursor-pointer">Spares</li></a>
+        <RouterLink to="/ride/engine"><li class="text-black hover:underline cursor-pointer">Engine</li></RouterLink>
+        <RouterLink to="/ride/parts"><li class="text-black hover:underline cursor-pointer">Parts</li></RouterLink>
+        <RouterLink to="/ride/components"><li class="text-black hover:underline cursor-pointer">Components</li></RouterLink>
+        <RouterLink to="/ride/spares"><li class="text-black hover:underline cursor-pointer">Spares</li></RouterLink>
       </ul>
     </div>
     
@@ -46,18 +46,18 @@ const toggleMenu = () => {
     <!-- Mobile Menu (Dropdown) -->
     <div v-if="isMenuOpen" class="md:hidden mt-2">
       <ul class="flex flex-col gap-2 bg-amber-100 py-2">
-        <a href="/ride/engine" @click="isMenuOpen = false">
+        <RouterLink to="/ride/engine" @click="isMenuOpen = false">
           <li class="text-black hover:bg-amber-200 cursor-pointer px-4 py-2">Engine</li>
-        </a>
-        <a href="/ride/parts" @click="isMenuOpen = false">
+        </RouterLink>
+        <RouterLink to="/ride/parts" @click="isMenuOpen = false">
           <li class="text-black hover:bg-amber-200 cursor-pointer px-4 py-2">Parts</li>
-        </a>
-        <a href="/ride/components" @click="isMenuOpen = false">
+        </RouterLink>
+        <RouterLink to="/ride/components" @click="isMenuOpen = false">
           <li class="text-black hover:bg-amber-200 cursor-pointer px-4 py-2">Components</li>
-        </a>
-        <a href="/ride/spares" @click="isMenuOpen = false">
+        </RouterLink>
+        <RouterLink to="/ride/spares" @click="isMenuOpen = false">
           <li class="text-black hover:bg-amber-200 cursor-pointer px-4 py-2">Spares</li>
-        </a>
+        </RouterLink>
       </ul>
     </div>
   </nav>
