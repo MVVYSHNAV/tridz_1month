@@ -1,359 +1,402 @@
 {
-    "bikeRides": [
-      {
-        "id": 1,
-        "riderName": "Alice Johnson",
-        "date": "2025-04-01",
-        "startLocation": "Central Park",
-        "endLocation": "Brooklyn Bridge",
-        "distanceKm": 12.5,
-        "durationMinutes": 45,
-        "bikeType": "Road Bike",
-        "averageSpeedKmh": 16.7
-      },
-      {
-        "id": 2,
-        "riderName": "Bob Smith",
-        "date": "2025-04-02",
-        "startLocation": "Times Square",
-        "endLocation": "Battery Park",
-        "distanceKm": 8.3,
-        "durationMinutes": 30,
-        "bikeType": "Mountain Bike",
-        "averageSpeedKmh": 16.6
-      },
-      {
-        "id": 3,
-        "riderName": "Carlos Diaz",
-        "date": "2025-04-03",
-        "startLocation": "Harlem",
-        "endLocation": "Lower Manhattan",
-        "distanceKm": 15.0,
-        "durationMinutes": 50,
-        "bikeType": "Hybrid",
-        "averageSpeedKmh": 18.0
-      },
-      {
-        "id": 4,
-        "riderName": "Diana Lee",
-        "date": "2025-04-05",
-        "startLocation": "Brooklyn Heights",
-        "endLocation": "Prospect Park",
-        "distanceKm": 6.5,
-        "durationMinutes": 25,
-        "bikeType": "City Bike",
-        "averageSpeedKmh": 15.6
-      },
-      {
-        "id": 5,
-        "riderName": "Ethan Patel",
-        "date": "2025-04-06",
-        "startLocation": "Queens",
-        "endLocation": "Roosevelt Island",
-        "distanceKm": 10.2,
-        "durationMinutes": 38,
-        "bikeType": "Electric Bike",
-        "averageSpeedKmh": 16.1
-      }
-    ]
-    ,
-    "Engine" :[
-      {
-        "id": 1,
-        "engine_name": "Single-Cylinder 150cc",
-        "type": "4-Stroke",
-        "fuel_type": "Petrol",
-        "displacement_cc": 149.5,
-        "cooling": "Air-Cooled",
-        "fuel_delivery": "Carburetor",
-        "max_power_hp": 13,
-        "torque_nm": 13.4,
-        "cylinders": 1,
-        "applications": ["Commuter Bikes"]
-      },
-      {
-        "id": 2,
-        "engine_name": "Parallel Twin 300cc",
-        "type": "4-Stroke",
-        "fuel_type": "Petrol",
-        "displacement_cc": 296,
-        "cooling": "Liquid-Cooled",
-        "fuel_delivery": "Fuel Injection",
-        "max_power_hp": 39,
-        "torque_nm": 27,
-        "cylinders": 2,
-        "applications": ["Sport Bikes", "Touring Bikes"]
-      },
-      {
-        "id": 3,
-        "engine_name": "V-Twin 650cc",
-        "type": "4-Stroke",
-        "fuel_type": "Petrol",
-        "displacement_cc": 649,
-        "cooling": "Liquid-Cooled",
-        "fuel_delivery": "Fuel Injection",
-        "max_power_hp": 68,
-        "torque_nm": 64,
-        "cylinders": 2,
-        "applications": ["Cruisers", "Adventure Bikes"]
-      },
-      {
-        "id": 4,
-        "engine_name": "Inline-Four 1000cc",
-        "type": "4-Stroke",
-        "fuel_type": "Petrol",
-        "displacement_cc": 998,
-        "cooling": "Liquid-Cooled",
-        "fuel_delivery": "Fuel Injection",
-        "max_power_hp": 200,
-        "torque_nm": 113,
-        "cylinders": 4,
-        "applications": ["Superbikes", "Track Bikes"]
-      },
-      {
-        "id": 5,
-        "engine_name": "Electric Hub Motor",
-        "type": "Electric",
-        "fuel_type": "Electric",
-        "battery_capacity_kwh": 4.2,
-        "range_km": 120,
-        "max_power_hp": 20,
-        "torque_nm": 100,
-        "cylinders": 0,
-        "cooling": "Air-Cooled",
-        "applications": ["Electric Scooters", "Commuter E-Bikes"]
-      }
-    ],
-    "Parts": [
-      {
-        "id": 1,
-        "part_name": "Front Disc Brake",
-        "category": "Braking System",
-        "material": "Steel",
-        "compatible_bikes": ["150cc Commuter", "300cc Sport"],
-        "price_usd": 45,
-        "weight_kg": 1.2,
-        "manufacturer": "Brembo",
-        "description": "High-performance front disc brake for improved stopping power and safety."
-      },
-      {
-        "id": 2,
-        "part_name": "Alloy Wheels",
-        "category": "Wheels",
-        "material": "Aluminum Alloy",
-        "compatible_bikes": ["Cruisers", "Sports Bikes"],
-        "price_usd": 120,
-        "weight_kg": 5.4,
-        "manufacturer": "Enkei",
-        "description": "Durable and lightweight alloy wheels designed for enhanced performance and style."
-      },
-      {
-        "id": 3,
-        "part_name": "LED Headlight Unit",
-        "category": "Electrical",
-        "material": "Plastic & LED",
-        "compatible_bikes": ["Electric Scooters", "Naked Bikes"],
-        "price_usd": 30,
-        "power_watt": 25,
-        "manufacturer": "Philips",
-        "description": "Bright and energy-efficient LED headlight for night riding visibility and style."
-      },
-      {
-        "id": 4,
-        "part_name": "Chain and Sprocket Kit",
-        "category": "Drivetrain",
-        "material": "Steel",
-        "compatible_bikes": ["150cc to 600cc"],
-        "price_usd": 60,
-        "weight_kg": 2.3,
-        "manufacturer": "RK Takasago",
-        "description": "Complete chain and sprocket kit for long-lasting performance and smooth power delivery."
-      },
-      {
-        "id": 5,
-        "part_name": "Adjustable Rear Suspension",
-        "category": "Suspension",
-        "material": "Steel and Rubber",
-        "compatible_bikes": ["Cruiser", "Touring Bikes"],
-        "price_usd": 85,
-        "weight_kg": 3.1,
-        "manufacturer": "Showa",
-        "description": "Adjustable rear shock absorber designed to improve ride comfort and handling."
-      }
-    ],
-    "Components": [
-      {
-        "id": 1,
-        "component_name": "Frame",
-        "category": "Structure",
-        "material": "High-Tensile Steel",
-        "weight_kg": 12.5,
-        "description": "The main chassis that supports all other components of the bike. Designed for strength and stability.",
-        "functions": ["Support rider and engine", "Connect front and rear suspension"]
-      },
-      {
-        "id": 2,
-        "component_name": "Engine",
-        "category": "Powertrain",
-        "type": "Single Cylinder, 4-Stroke",
-        "displacement_cc": 155,
-        "fuel_type": "Petrol",
-        "cooling": "Air-Cooled",
-        "description": "Converts fuel into motion. Central to the bike's performance and torque delivery.",
-        "functions": ["Generate power", "Drive wheels"]
-      },
-      {
-        "id": 3,
-        "component_name": "Transmission",
-        "category": "Powertrain",
-        "gears": 5,
-        "type": "Manual",
-        "description": "Transfers power from the engine to the rear wheel. Allows speed and torque control.",
-        "functions": ["Change speed", "Transfer power efficiently"]
-      },
-      {
-        "id": 4,
-        "component_name": "Front Suspension",
-        "category": "Suspension",
-        "type": "Telescopic Fork",
-        "travel_mm": 120,
-        "material": "Steel and Aluminum",
-        "description": "Absorbs shocks from the front wheel and maintains ride comfort.",
-        "functions": ["Shock absorption", "Maintain front wheel stability"]
-      },
-      {
-        "id": 5,
-        "component_name": "Rear Suspension",
-        "category": "Suspension",
-        "type": "Mono-shock",
-        "adjustable": true,
-        "description": "Absorbs rear wheel shocks and contributes to handling and comfort.",
-        "functions": ["Shock absorption", "Maintain rear wheel control"]
-      },
-      {
-        "id": 6,
-        "component_name": "Battery",
-        "category": "Electrical",
-        "type": "Maintenance Free",
-        "voltage_v": 12,
-        "capacity_ah": 7,
-        "description": "Powers the electric starter, lights, and instruments.",
-        "functions": ["Store electrical energy", "Power electronic systems"]
-      },
-      {
-        "id": 7,
-        "component_name": "Fuel Tank",
-        "category": "Structure",
-        "capacity_l": 13,
-        "material": "Steel",
-        "description": "Stores fuel used by the engine. Often designed ergonomically for rider grip.",
-        "functions": ["Store fuel", "Integrate ergonomically with frame"]
-      },
-      {
-        "id": 8,
-        "component_name": "Brake System",
-        "category": "Safety",
-        "front_brake": "Disc",
-        "rear_brake": "Drum",
-        "brake_type": "Hydraulic",
-        "description": "Used to slow down or stop the bike safely.",
-        "functions": ["Reduce speed", "Ensure safety"]
-      },
-      {
-        "id": 9,
-        "component_name": "Exhaust System",
-        "category": "Powertrain",
-        "material": "Stainless Steel",
-        "type": "Single Exhaust",
-        "description": "Releases combustion gases and helps reduce noise and emissions.",
-        "functions": ["Expel gases", "Control emissions"]
-      },
-      {
-        "id": 10,
-        "component_name": "Instrument Cluster",
-        "category": "Electronics",
-        "display_type": "Digital + Analog",
-        "features": ["Speedometer", "Odometer", "Fuel Gauge", "Gear Indicator"],
-        "description": "Displays key information to the rider for monitoring performance and safety.",
-        "functions": ["Show speed", "Indicate gear and fuel", "Track distance"]
-      }
-    ],
-    "Spares": [
-      {
-        "id": 1,
-        "spare_name": "Air Filter",
-        "category": "Engine",
-        "compatible_bikes": ["125cc Commuter", "150cc Sports"],
-        "price_usd": 10,
-        "manufacturer": "Bosch",
-        "part_number": "AF-125B",
-        "material": "Paper & Plastic",
-        "lifespan_km": 10000,
-        "description": "Removes dust and dirt from intake air to protect engine."
-      },
-      {
-        "id": 2,
-        "spare_name": "Spark Plug",
-        "category": "Ignition",
-        "compatible_bikes": ["All Petrol Bikes"],
-        "price_usd": 5,
-        "manufacturer": "NGK",
-        "part_number": "CPR8EA-9",
-        "material": "Copper Alloy",
-        "lifespan_km": 15000,
-        "description": "Ignites air-fuel mixture for combustion. Essential for starting and performance."
-      },
-      {
-        "id": 3,
-        "spare_name": "Engine Oil",
-        "category": "Lubricants",
-        "compatible_bikes": ["150cc to 250cc"],
-        "price_usd": 20,
-        "manufacturer": "Castrol",
-        "part_number": "ACTEVO10W40",
-        "material": "Synthetic Blend",
-        "lifespan_km": 5000,
-        "description": "Reduces engine wear and keeps components running smoothly."
-      },
-      {
-        "id": 4,
-        "spare_name": "Clutch Plate Set",
-        "category": "Transmission",
-        "compatible_bikes": ["150cc", "200cc"],
-        "price_usd": 35,
-        "manufacturer": "Exedy",
-        "part_number": "CLP150-EX",
-        "material": "Friction Material & Steel",
-        "lifespan_km": 20000,
-        "description": "Transfers engine power to gearbox. Worn plates can lead to slippage."
-      },
-      {
-        "id": 5,
-        "spare_name": "Brake Pads - Front",
-        "category": "Braking",
-        "compatible_bikes": ["Disc Brake Equipped"],
-        "price_usd": 15,
-        "manufacturer": "Brembo",
-        "part_number": "BP-F123",
-        "material": "Sintered Metal",
-        "lifespan_km": 10000,
-        "description": "Essential for effective braking. Regular inspection and replacement needed."
-      },
-      {
-        "id": 6,
-        "spare_name": "Chain Lubricant Spray",
-        "category": "Maintenance",
-        "compatible_bikes": ["All Chain-Driven Bikes"],
-        "price_usd": 8,
-        "manufacturer": "Motul",
-        "part_number": "CL-MOT123",
-        "material": "Synthetic Oil",
-        "lifespan_km": 500,
-        "description": "Lubricates and protects the chain, increasing lifespan and reducing friction."
-      }
-    ]
-    
-    
-    
-  }
-  
+  "bikeRides": [
+    {
+      "id": "2",
+      "riderName": "Csde tewz",
+      "date": "2025-04-03",
+      "startLocation": "Harlem",
+      "endLocation": "Lower Manhattan",
+      "distanceKm": 15,
+      "durationMinutes": 50,
+      "bikeType": "Hybrid",
+      "averageSpeedKmh": 18
+    },
+    {
+      "id": "4",
+      "riderName": "Diana Lee",
+      "date": "2025-04-05",
+      "startLocation": "Brooklyn Heights",
+      "endLocation": "Prospect Park",
+      "distanceKm": 6.5,
+      "durationMinutes": 25,
+      "bikeType": "City Bike",
+      "averageSpeedKmh": 15.6
+    },
+    {
+      "id": "5",
+      "riderName": "oni ichakuva",
+      "date": "2025-04-16",
+      "startLocation": "here",
+      "endLocation": "there",
+      "distanceKm": "140",
+      "durationMinutes": "15101",
+      "bikeType": "hima",
+      "averageSpeedKmh": "100"
+    },
+    {
+      "id": "6",
+      "riderName": "ooakcclm aasd",
+      "date": "2025-04-10",
+      "startLocation": "asdd adasas",
+      "endLocation": "sdasdd2",
+      "distanceKm": 340,
+      "durationMinutes": 1215121,
+      "bikeType": "ijaoklc",
+      "averageSpeedKmh": 41
+    },
+    {
+      "id": "7",
+      "riderName": "OLOLOLOL",
+      "date": "2025-04-12",
+      "startLocation": "SIMRANLA",
+      "endLocation": "KURMILA",
+      "distanceKm": 1411,
+      "durationMinutes": 21215454,
+      "bikeType": "ERERT",
+      "averageSpeedKmh": 210
+    },
+    {
+      "id": "0cf1",
+      "riderName": "wetrpo",
+      "date": "2025-04-26",
+      "startLocation": "kannur",
+      "endLocation": "kochi",
+      "distanceKm": 111,
+      "durationMinutes": 101,
+      "bikeType": "himalayan",
+      "averageSpeedKmh": 1011
+    }
+  ],
+  "Engine": [
+    {
+      "id": "1",
+      "engine_name": "Single-Cylinder 150cc",
+      "type": "4-Stroke",
+      "fuel_type": "Petrol",
+      "displacement_cc": 149.5,
+      "cooling": "Air-Cooled",
+      "fuel_delivery": "Carburetor",
+      "max_power_hp": 13,
+      "torque_nm": 13.4,
+      "cylinders": 1,
+      "applications": [
+        "Commuter Bikes"
+      ]
+    },
+    {
+      "id": "2",
+      "engine_name": "Parallel Twin 300cc",
+      "type": "4-Stroke",
+      "fuel_type": "Petrol",
+      "displacement_cc": 296,
+      "cooling": "Liquid-Cooled",
+      "fuel_delivery": "Fuel Injection",
+      "max_power_hp": 39,
+      "torque_nm": 27,
+      "cylinders": 2,
+      "applications": [
+        "Sport Bikes",
+        "Touring Bikes"
+      ]
+    },
+    {
+      "id": "3",
+      "engine_name": "V-Twin 650cc",
+      "type": "4-Stroke",
+      "fuel_type": "Petrol",
+      "displacement_cc": 649,
+      "cooling": "Liquid-Cooled",
+      "fuel_delivery": "Fuel Injection",
+      "max_power_hp": 68,
+      "torque_nm": 64,
+      "cylinders": 2,
+      "applications": [
+        "Cruisers",
+        "Adventure Bikes"
+      ]
+    },
+    {
+      "id": "4",
+      "engine_name": "Inline-Four 1000cc",
+      "type": "4-Stroke",
+      "fuel_type": "Petrol",
+      "displacement_cc": 998,
+      "cooling": "Liquid-Cooled",
+      "fuel_delivery": "Fuel Injection",
+      "max_power_hp": 200,
+      "torque_nm": 113,
+      "cylinders": 4,
+      "applications": [
+        "Superbikes",
+        "Track Bikes"
+      ]
+    },
+    {
+      "id": "5",
+      "engine_name": "Electric Hub Motor",
+      "type": "Electric",
+      "fuel_type": "Electric",
+      "battery_capacity_kwh": 4.2,
+      "range_km": 120,
+      "max_power_hp": 20,
+      "torque_nm": 100,
+      "cylinders": 0,
+      "cooling": "Air-Cooled",
+      "applications": [
+        "Electric Scooters",
+        "Commuter E-Bikes"
+      ]
+    }
+  ],
+  "Parts": [
+    {
+      "id": "1",
+      "part_name": "Front Disc Brake",
+      "category": "Braking System",
+      "material": "Steel",
+      "compatible_bikes": [
+        "150cc Commuter",
+        "300cc Sport"
+      ],
+      "price_usd": 45,
+      "weight_kg": 1.2,
+      "manufacturer": "Brembo",
+      "description": "High-performance front disc brake for improved stopping power and safety."
+    },
+    {
+      "id": "2",
+      "part_name": "Alloy Wheels",
+      "category": "Wheels",
+      "material": "Aluminum Alloy",
+      "compatible_bikes": [
+        "Cruisers",
+        "Sports Bikes"
+      ],
+      "price_usd": 120,
+      "weight_kg": 5.4,
+      "manufacturer": "Enkei",
+      "description": "Durable and lightweight alloy wheels designed for enhanced performance and style."
+    },
+    {
+      "id": "3",
+      "part_name": "LED Headlight Unit",
+      "category": "Electrical",
+      "material": "Plastic & LED",
+      "compatible_bikes": [
+        "Electric Scooters",
+        "Naked Bikes"
+      ],
+      "price_usd": 30,
+      "power_watt": 25,
+      "manufacturer": "Philips",
+      "description": "Bright and energy-efficient LED headlight for night riding visibility and style."
+    },
+    {
+      "id": "4",
+      "part_name": "Chain and Sprocket Kit",
+      "category": "Drivetrain",
+      "material": "Steel",
+      "compatible_bikes": [
+        "150cc to 600cc"
+      ],
+      "price_usd": 60,
+      "weight_kg": 2.3,
+      "manufacturer": "RK Takasago",
+      "description": "Complete chain and sprocket kit for long-lasting performance and smooth power delivery."
+    },
+    {
+      "id": "5",
+      "part_name": "Adjustable Rear Suspension",
+      "category": "Suspension",
+      "material": "Steel and Rubber",
+      "compatible_bikes": [
+        "Cruiser",
+        "Touring Bikes"
+      ],
+      "price_usd": 85,
+      "weight_kg": 3.1,
+      "manufacturer": "Showa",
+      "description": "Adjustable rear shock absorber designed to improve ride comfort and handling."
+    }
+  ],
+  "Components": [
+    {
+      "id": "1",
+      "component_name": "Frame",
+      "category": "Structure",
+      "material": "High-Tensile Steel",
+      "weight_kg": 12.5,
+      "description": "The main chassis that supports all other components of the bike. Designed for strength and stability.",
+      "functions": [
+        "Support rider and engine",
+        "Connect front and rear suspension"
+      ]
+    },
+    {
+      "id": "2",
+      "component_name": "Engine",
+      "category": "Powertrain",
+      "type": "Single Cylinder, 4-Stroke",
+      "displacement_cc": 155,
+      "fuel_type": "Petrol",
+      "cooling": "Air-Cooled",
+      "description": "Converts fuel into motion. Central to the bike's performance and torque delivery.",
+      "functions": [
+        "Generate power",
+        "Drive wheels"
+      ]
+    },
+    {
+      "id": "4",
+      "component_name": "Front Suspension",
+      "category": "Suspension",
+      "type": "Telescopic Fork",
+      "travel_mm": 120,
+      "material": "Steel and Aluminum",
+      "description": "Absorbs shocks from the front wheel and maintains ride comfort.",
+      "functions": [
+        "Shock absorption",
+        "Maintain front wheel stability"
+      ]
+    },
+    {
+      "id": "5",
+      "component_name": "Rear Suspension",
+      "category": "Suspension",
+      "type": "Mono-shock",
+      "adjustable": true,
+      "description": "Absorbs rear wheel shocks and contributes to handling and comfort.",
+      "functions": [
+        "Shock absorption",
+        "Maintain rear wheel control"
+      ]
+    },
+    {
+      "id": "6",
+      "component_name": "Battery",
+      "category": "Electrical",
+      "type": "Maintenance Free",
+      "voltage_v": 12,
+      "capacity_ah": 7,
+      "description": "Powers the electric starter, lights, and instruments.",
+      "functions": [
+        "Store electrical energy",
+        "Power electronic systems"
+      ]
+    },
+    {
+      "id": "7",
+      "component_name": "Fuel Tank",
+      "category": "Structure",
+      "capacity_l": 13,
+      "material": "Steel",
+      "description": "Stores fuel used by the engine. Often designed ergonomically for rider grip.",
+      "functions": [
+        "Store fuel",
+        "Integrate ergonomically with frame"
+      ]
+    },
+    {
+      "id": "8",
+      "component_name": "Brake System",
+      "category": "Safety",
+      "front_brake": "Disc",
+      "rear_brake": "Drum",
+      "brake_type": "Hydraulic",
+      "description": "Used to slow down or stop the bike safely.",
+      "functions": [
+        "Reduce speed",
+        "Ensure safety"
+      ]
+    },
+    {
+      "id": "9",
+      "component_name": "Exhaust System",
+      "category": "Powertrain",
+      "material": "Stainless Steel",
+      "type": "Single Exhaust",
+      "description": "Releases combustion gases and helps reduce noise and emissions.",
+      "functions": [
+        "Expel gases",
+        "Control emissions"
+      ]
+    },
+    {
+      "id": "10",
+      "component_name": "Instrument Cluster",
+      "category": "Electronics",
+      "display_type": "Digital + Analog",
+      "features": [
+        "Speedometer",
+        "Odometer",
+        "Fuel Gauge",
+        "Gear Indicator"
+      ],
+      "description": "Displays key information to the rider for monitoring performance and safety.",
+      "functions": [
+        "Show speed",
+        "Indicate gear and fuel",
+        "Track distance"
+      ]
+    }
+  ],
+  "Spares": [
+    {
+      "id": "1",
+      "spare_name": "Air Filter",
+      "category": "Engine",
+      "compatible_bikes": [
+        "125cc Commuter",
+        "150cc Sports"
+      ],
+      "price_usd": 10,
+      "manufacturer": "Bosch",
+      "part_number": "AF-125B",
+      "material": "Paper & Plastic",
+      "lifespan_km": 10000,
+      "description": "Removes dust and dirt from intake air to protect engine."
+    },
+    {
+      "id": "3",
+      "spare_name": "Engine Oil",
+      "category": "Lubricants",
+      "compatible_bikes": [
+        "150cc to 250cc"
+      ],
+      "price_usd": 20,
+      "manufacturer": "Castrol",
+      "part_number": "ACTEVO10W40",
+      "material": "Synthetic Blend",
+      "lifespan_km": 5000,
+      "description": "Reduces engine wear and keeps components running smoothly."
+    },
+    {
+      "id": "5",
+      "spare_name": "Brake Pads - Front",
+      "category": "Braking",
+      "compatible_bikes": [
+        "Disc Brake Equipped"
+      ],
+      "price_usd": 15,
+      "manufacturer": "Brembo",
+      "part_number": "BP-F123",
+      "material": "Sintered Metal",
+      "lifespan_km": 10000,
+      "description": "Essential for effective braking. Regular inspection and replacement needed."
+    },
+    {
+      "id": "6",
+      "spare_name": "Chain Lubricant Spray",
+      "category": "Maintenance",
+      "compatible_bikes": [
+        "All Chain-Driven Bikes"
+      ],
+      "price_usd": 8,
+      "manufacturer": "Motul",
+      "part_number": "CL-MOT123",
+      "material": "Synthetic Oil",
+      "lifespan_km": 500,
+      "description": "Lubricates and protects the chain, increasing lifespan and reducing friction."
+    }
+  ]
+}

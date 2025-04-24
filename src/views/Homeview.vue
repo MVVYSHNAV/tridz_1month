@@ -6,5 +6,5 @@ import RideListing from '@/components/RIderListings.vue'
 <template>
       <Hero title="Rider Ride to Trills" subtitle="Every danger should get in hands to avoid the fear" />
         <Homecard />
-        <RideListing :limit="5"/>
+        <RideListing :limit="3" :showButton="true"/>
 </template>

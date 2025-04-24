@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import logo from '@/assets/logo.png';
-import  { RouterLink} from 'vue-router';
+import  { RouterLink } from 'vue-router';
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {

@@ -10,14 +10,14 @@ import Card from '@/components/Card.vue';
                     <p class="mt-2  mb-4">
                         Browse the site and start your  journey
                     </p>
-                    <a href="" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
+                    <a href="/k" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
                         Browse Site
                     </a>
                </Card>
                 <Card>
                     <h2 class="text-2xl font-bold"> For Bikers </h2>
                     <p class="mt-2  mb-4"> List your bike to find the perfect ride for the Journey</p>
-                    <a href="" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
+                    <a href="/k" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
                         Browse Site
                     </a>
                 </Card>

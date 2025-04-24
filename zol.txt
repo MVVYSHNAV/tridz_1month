@@ -1,0 +1,54 @@
+<script setup>
+import GenericList from '@/components/GenericList.vue';
+
+const engineFields = [
+  { label: 'Type', key: 'type' },
+  { label: 'Fuel', key: 'fuel_type' },
+  { label: 'Torque (Nm)', key: 'torque_nm' },
+  { label: 'Applications', key: 'applications' }
+];
+</script>
+
+<template>
+  <GenericList title="Engine" endpoint="Engine" :fields="engineFields" />
+</template>
+
+
+///////////////////
+
+
+
+
+<script setup>
+import GenericList from '@/components/GenericList.vue';
+
+const partsFields = [
+  { label: 'Category', key: 'category' },
+  { label: 'Material', key: 'material' },
+  { label: 'Manufacturer', key: 'manufacturer' },
+  { label: 'Description', key: 'description' }
+];
+</script>
+
+<template>
+  <GenericList title="Parts" endpoint="Parts" :fields="partsFields" />
+</template>
+
+
+
+////////////////////////////
+
+<script setup>
+import GenericList from '../components/GenericLIst.vue';
+
+const engineFields = [
+  { label: 'Type', key: 'type' },
+  { label: 'Fuel', key: 'fuel_type' },
+  { label: 'Torque (Nm)', key: 'torque_nm' },
+  { label: 'Applications', key: 'applications' }
+];
+</script>
+
+<template>
+  <GenericList title="Engine" endpoint="Engine" :fields="engineFields" />
+</template>
